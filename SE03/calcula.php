@@ -4,7 +4,6 @@
   </head>
   <body>
     <?php
-      //ou acesso: localhost/pasta/arquivo.php?numero1=50&numero2=100
       $numero1 = $_GET["numero1"];
       $numero2 = $_GET["numero2"];
       $total = $numero1+$numero2;
