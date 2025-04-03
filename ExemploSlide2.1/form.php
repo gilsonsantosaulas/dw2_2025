@@ -6,9 +6,12 @@
     </head>
     <body>
         <form action="calcula.php" method="post">
-            <input type="text" name="notas[]" placeholder="Nota 1">
-            <input type="text" name="notas[]" placeholder="Nota 2">
-            <input type="text" name="notas[]" placeholder="Nota 3">
+            <?php 
+                for($i=0; $i<3; $i++) {
+                    $numero_nota = $i+1;
+                    echo "<input type='text' name='notas[]' placeholder='Nota $numero_nota'>";
+                }
+            ?>
             <button type="submit">Calcular Média</button>
         </form>
     </body>
